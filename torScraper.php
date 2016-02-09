@@ -33,7 +33,7 @@ class TorScraper{
 				$null=fread($fp, 128);
 			fwrite($fp,"signal newnym\n");
 				$null=fread($fp, 128);
-			fwrite($fp,"quit\n");
+			@fwrite($fp,"quit\n");
 				$null=fread($fp, 128);
 				sleep (.5);
 			fclose($fp);
